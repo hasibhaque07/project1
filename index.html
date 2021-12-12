@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="collab.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Fruktur&family=Open+Sans&family=Poppins:wght@300;400;500&family=Raleway:ital@1&family=Satisfy&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="mobile-navigation" id="mobile-navigation">
+        <div class="mobile-header">
+            <img class="logo" src="img/Collab..png">
+            <div class="close-button" onclick="toggleNavigationButton()">
+                <button>
+                    <i class="fa fa-close"></i>
+                </button>
+            </div>
+        </div>
+        <a href="#" class="mobile-navigation-items mobile-navigation-items-active">Home</a>
+        <a href="#" class="mobile-navigation-items">About</a>
+        <a href="#" class="mobile-navigation-items">Services</a>
+        <a href="#" class="mobile-navigation-items">Contact</a>
+    </div>
+    <div class="container">
+        <header class="header">
+            <img class="logo" src="img/Collab..png">
+            <nav class="navigation">
+                <a href="#" class="navigation-items navigation-items-active">Home</a>
+                <a href="#" class="navigation-items">About</a>
+                <a href="#" class="navigation-items">Services</a>
+                <a href="#" class="navigation-items">Contact</a>
+            </nav>
+            <div class="menu-button" onclick="toggleNavigationButton()">
+                <button>
+                    <i class="fa fa-reorder"></i>
+                </button>
+
+            </div>
+            
+            <button class="navigation-button">Get Started</button>
+
+        </header>
+        <main>
+            <div class="main-content">
+                <h1 class="headline">Collaborate<br> Like Never Before</h1>
+                <p class="description">Sea et sed dolore diam eirmod.Sea et sed dolore diam eirmod.Sea et sed dolore diam eirmod.Sea et sed dolore diam eirmod.Sea et sed dolore diam eirmod. Et et est ea dolor, sadipscing et dolor eos duo sed erat. Duo vero.</p>
+                <button class="play-button"><i class="fa fa-play-circle"></i>Discover Video</button>
+            </div>
+            <div class="main-img">
+                <img src="img/data-x1.png">
+            </div>
+        </main>
+
+        <footer>
+            <a href="#" class="social-items"><i class="fa fa-instagram"></i></a>
+            <a href="#" class="social-items"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="social-items"><i class="fa fa-youtube-play"></i></a>
+            
+            
+            
+            <span class="textt">Hasib Haque</span>
+        </footer>
+    </div>
+
+    <script>
+        function toggleNavigationButton(){
+            var mobileNav = document.getElementById("mobile-navigation");
+            if(mobileNav.classList.contains("mobile-navigation-active")){
+                mobileNav.classList.remove("mobile-navigation-active");
+            }
+            else{
+                mobileNav.classList.add("mobile-navigation-active");
+            }
+        }
+
+
+    </script>
+    
+    
+</body>
+</html>

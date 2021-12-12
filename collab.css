@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+    font: inherit;
+    color: inherit;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+.mobile-navigation{
+    position: fixed;
+    height:100vh;
+    width: 100vw;
+    padding: 24px;
+    display: none;
+    background-color: white;
+    transform: translateX(-100%);
+    transition: transform 300ms ease-in-out;
+}
+.mobile-navigation-active{
+    transform: translateX(0);
+}
+.mobile-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.close-button button{
+    background: transparent;
+    font-size: 1.5rem;
+    border: none;
+    
+}
+.mobile-navigation-items{
+    display: block;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #bdbdbd;
+    padding-bottom: 20px;
+}
+.mobile-navigation-items-active{
+    color: black;
+    padding-top: 24px;
+}
+
+.container{
+    padding: 24px;
+    max-width: 1200px;
+    height: 100vh;
+    display: grid;
+    margin: 0 auto;
+    align-items: center;
+    grid-template-rows: auto 1fr auto;
+    
+}
+.header{
+    display: flex;
+    
+    align-items: center;
+}
+.navigation{
+    flex-grow: 1;
+}
+
+.navigation-items{
+    text-decoration: none;
+    padding-right: 20px;
+    color: #bdbdbd;
+}
+.navigation-items-active{
+    color: black;
+    padding-left: 40px;
+}
+.menu-button{
+    flex-grow: 1;
+    display: none;
+
+}
+.menu-button button{
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    background: transparent;
+   
+    
+}
+.navigation-button{
+    background-color: black;
+    color: white;
+    padding: 10px 36px;
+    border-radius: 50px;
+    font-size: 1rem;
+    border: none;
+
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headline{
+    font-size: 3rem;
+    font-weight: 500;
+}
+.description{
+    color: #828282;
+    padding: 24px 0px;
+}
+.play-button{
+    background: transparent;
+    padding: 10px 36px;
+    border-radius: 50px;
+    font-size: 16px;
+    border: 1px solid #e0e0e0;
+
+}
+.main-img img{
+    width: 100%;
+}
+.main-img{
+    flex: 1;
+}
+.main-content{
+    flex: 1;
+}
+.fa{
+    padding-right: 10px;
+}
+footer{
+    color: #bdbdbd;
+}
+.textt{
+    margin-left: 40px;
+}
+
+@media (max-width: 700px){
+    .mobile-navigation{
+        display: block;
+    }
+    header .logo{
+        display: none;
+    }
+    .navigation{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+    main{
+        flex-direction: column;
+    }
+    .main-content{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+}
