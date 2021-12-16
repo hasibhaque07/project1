@@ -135,7 +135,7 @@ footer{
     margin-left: 40px;
 }
 
-@media (max-width: 700px){
+@media (max-width: 1000px){
     .mobile-navigation{
         display: block;
     }
